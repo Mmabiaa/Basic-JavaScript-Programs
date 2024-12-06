@@ -28,4 +28,4 @@ To get started with the Basic JavaScript Programs, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mmabiaa/basic-JavaScript-Programs.git
+   git clone https://github.com/mmabiaa/Basic-JavaScript-Programs.git
