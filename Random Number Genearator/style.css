@@ -1,0 +1,24 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#myBtn{
+    font-size: 3em;
+    padding: 5px 25px;
+    border: 5px;
+}
+button{
+    background-color: aquamarine;
+    color: rgb(33, 22, 22);
+    border-radius: 5px;
+    animation: normal;
+    cursor: pointer;
+    transition: background-color 0.24s;
+}
+button:hover{
+    background-color: aqua;
+}
+
+.label{
+    font-size: 3em;
+}
