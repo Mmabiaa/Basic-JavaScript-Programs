@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #ffffff;
+    --button-bg: #3c7efa;
+    --button-hover-bg: #8e60ca;
+    --container-bg: rgba(0, 0, 0, 0.6);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --text-color: #ddd;
+    --textarea-color: #333;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(-45deg, #6e8efb, #a777e3, #be61fc, #de68fc);
+    background-size: 400% 100%;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: gradient-animation 3s ease infinite;
+}
+
+/* Keyframes for Animated Background */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container */
+.container {
+    background: var(--container-bg);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 15px var(--shadow-color);
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    min-height: 80px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    color: var(--textarea-color);
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: var(--button-bg);
+    border: none;
+    padding: 10px 15px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px);
+}
+
+/* Output Section */
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+#output canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.instructions {
+    color: var(--text-color);
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Footer Link */
+.container p a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container p a:hover {
+    color: var(--primary-color);
+}
