@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+<body>
+    <h2>Your Profile</h2>
+    <div id="profile"></div>
+
+    <script>
+        fetch("http://localhost:5000/profile", {
+            method: "GET",
+            headers: {
+                "Authorization": "Bearer " + localStorage.getItem("token")
+            }
+        })
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("profile").innerHTML = `<p>Name: ${data.name}</p><br><p>Email: ${data.email}</p><br>`;
+        })
+    </script>
+</body>
+</html>
