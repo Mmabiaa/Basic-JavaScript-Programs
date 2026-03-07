@@ -3,8 +3,8 @@ const myBtn = document.getElementById('myBtn');
 const myLabel1 = document.getElementById('myLabel1');
 const myLabel2 = document.getElementById('myLabel2');
 const myLabel3 = document.getElementById('myLabel3');
-const min = 1;
-const max = 6;
+const min = 3;
+const max = 10;
 
 let random1;
 let random2;
